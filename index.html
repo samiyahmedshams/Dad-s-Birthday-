@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Baba</title><style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000,#1a1a1a,#000);
+    overflow:hidden;
+    font-family:Georgia,serif;
+}
+
+.container{
+    text-align:center;
+    z-index:10;
+}
+
+h1{
+    color:#FFD700;
+    font-size:4rem;
+    text-shadow:0 0 20px gold;
+    animation:glow 2s infinite alternate;
+}
+
+p{
+    color:white;
+    font-size:1.4rem;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 10px gold; }
+    to{ text-shadow:0 0 30px gold,0 0 50px gold; }
+}
+
+.balloon{
+    position:absolute;
+    bottom:-150px;
+    width:60px;
+    height:80px;
+    border-radius:50%;
+    animation:float 10s linear infinite;
+}
+
+.balloon:nth-child(1){left:10%;background:#FFD700;}
+.balloon:nth-child(2){left:30%;background:#fff4b3;animation-duration:12s;}
+.balloon:nth-child(3){left:50%;background:#FFD700;animation-duration:9s;}
+.balloon:nth-child(4){left:70%;background:#fff4b3;animation-duration:13s;}
+.balloon:nth-child(5){left:90%;background:#FFD700;animation-duration:11s;}
+
+@keyframes float{
+    from{transform:translateY(0);}
+    to{transform:translateY(-120vh);}
+}
+</style></head><body><div class="container">
+    <h1>🎂 Happy Birthday Baba 🎂</h1>
+    <p>May Allah bless you with health, happiness and a long beautiful life ❤️</p>
+    <p>Love from Samiya ✨</p>
+</div><div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div><audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio></body>
+  </html>
